@@ -1,12 +1,45 @@
-# React + Vite
+# OutlierProj1 Stretch Sequence Coach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A progressive web app for guided stretching routines with streak tracking and animated demonstrations.
 
-Currently, two official plugins are available:
+## Features
+- 🧘 Interactive drag-and-drop sequence builder
+- 🔥 Daily streak tracking with local storage
+- ⏳ Smart rest timer with circular progress
+- 🎨 SVG animations for each stretch movement
+- 📊 Progress statistics and history
+- 🔊 Audio feedback for transitions
+- 📱 Fully responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Usage
+1. Arrange stretches via drag-and-drop
+2. Click any stretch to start timer
+3. Complete 3+ stretches daily to maintain streak
+4. Use settings icon to reset progress
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Customization
+Modify `src/utils/stretchAnimations.jsx` to:
+- Add new SVG animations
+- Adjust default durations
+- Modify color schemes
+
+## Tech Stack
+- React 18 + Vite
+- react-beautiful-dnd
+- LocalStorage API
+- CSS Modules
+- SVG Animations
+
+## Contributing
+1. Fork repository
+2. Create feature branch
+3. Submit PR with tested changes
+
+## Preview
+Access live demo at [http://localhost:5173](http://localhost:5173) after starting dev server.
